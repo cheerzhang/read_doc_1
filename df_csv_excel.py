@@ -5,7 +5,7 @@ import pandas as pd
 import os, re, warnings
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 def parse_dates(df, date_column_name, format=None):
     def apply_date_parser(date_parser, format=None):

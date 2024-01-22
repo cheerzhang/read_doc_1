@@ -82,3 +82,43 @@ Example: Extracting features from a JSON column
    The functions use the :mod:`json` module to handle JSON parsing.
    If an error occurs during processing, the corresponding value in the result column is set to `None`.
 
+
+Get Latest Row by Column
+========================
+
+.. function:: get_latest_row_by_column(df, date_column, duplicate_column)
+  
+   This function retrieves the latest row for each unique value in a specified column based on the values in another date column. It is useful when you have duplicate entries in a DataFrame and want to keep only the rows with the latest date.
+
+   :param df: The input DataFrame.
+   :type df: :class:`pandas.DataFrame`
+
+   :param date_column: The name of the date column used for sorting and determining the latest row.
+   :type date_column: :class:`str`
+
+   :param duplicate_column: The name of the column containing duplicate values, for which the latest rows will be retained.
+   :type duplicate_column: :class:`str`
+
+   :return: A DataFrame containing the latest row for each unique value in the specified duplicate column.
+   :rtype: :class:`pandas.DataFrame`
+
+Example
+
+   .. code-block:: python
+
+      from df_csv_excel import read_data
+
+      # Example DataFrame
+      data = {'Email': ['john@example.com', 'alice@example.com', 'john@example.com'],
+              'created_at': ['2022-01-15', '2022-01-14', '2022-01-16']}
+
+      df = pd.DataFrame(data)
+
+      # Get the latest row for each unique 'Email'
+      result = read_data.get_latest_row_by_column(df, 'created_at', 'Email')
+
+.. note::
+   
+   The input DataFrame is modified in-place during the process.
+
+
