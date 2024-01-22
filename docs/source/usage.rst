@@ -12,7 +12,7 @@ To use read_csv_excel, first install it using pip:
 
    (.venv) $ pip install read-csv-excel
 
-Creating recipes
+Load dataframe from file
 ----------------
 
 To read dataframe from csv or excel file,
@@ -29,5 +29,4 @@ For example:
 
 >>> from df_csv_excel import read_data
 >>> df = read_data.read_data_by_path('a.xlsx')
-
 
