@@ -79,6 +79,5 @@ Example: Extracting features from a JSON column
 .. note::
 
    The functions use the :mod:`json` module to handle JSON parsing.
-
    If an error occurs during processing, the corresponding value in the result column is set to `None`.
 
