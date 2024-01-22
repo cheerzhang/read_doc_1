@@ -4,4 +4,4 @@ API
 .. autosummary::
    :toctree: generated
 
-   lumache
+   df_csv_excel
