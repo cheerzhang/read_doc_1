@@ -6,29 +6,28 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To use read_csv_excel, first install it using pip:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   (.venv) $ pip install read-csv-excel
 
 Creating recipes
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+To read dataframe from csv or excel file,
+you can use the ``df_csv_excel.read_data.read_data_by_path()`` function:
 
-.. autofunction:: lumache.get_random_ingredients
+.. autofunction:: df_csv_excel.read_data.read_data_by_path
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
+The ``file_path`` parameter should be either ``".csv"``
+or ``"xlsx"``. Otherwise, :py:func:`df_csv_excel.read_data.read_data_by_path`
 will raise an exception.
 
-.. autoexception:: lumache.InvalidKindError
 
 For example:
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+>>> from df_csv_excel import read_data
+>>> df = read_data.read_data_by_path('a.xlsx')
+
 
