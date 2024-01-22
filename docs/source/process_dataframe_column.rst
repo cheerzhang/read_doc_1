@@ -4,24 +4,21 @@ Process Dataframe Column
 Process Date Column
 --------------------
 
-**Functions**
-## function: parse_dates()
-The ``parse_dates()`` function is designed to parse date columns in a Pandas DataFrame. It provides flexibility by allowing users to specify a date format or automatically extracting the format from an error message. You can use the :func: ``df_csv_excel.read_data.parse_dates`` function.
+.. function:: parse_dates(df, date_column_name, format=None)
+  
+  The :func:`~parse_dates` function is designed to parse date columns in a Pandas DataFrame. It provides flexibility by allowing users to specify a date format or automatically extracting the format from an error message. You can use the :func:`~df_csv_excel.read_data.parse_dates` function.
 
-.. autofunction:: df_csv_excel.read_data.parse_dates
+  :param df: The DataFrame that includes the date column.
+  :type df: :class:`pandas.DataFrame`
 
-**Parameters**
+  :param date_column_name: The name of the date column.
+  :type date_column_name: :class:`str`
 
-- **df** (:class: `pandas.DataFrame`)
-  The dataframe that includes the date column.
+  :param format: The format of the date column, for example, ``%d/%m/%Y %H:%M:%S``. Optional, default is None.
+  :type format: :class:`str`, optional
 
-- **date_column_name** (:class: `str`)
-  The name of the date column.
-
-- **format** (:class: `str`, optional)
-  The format of the date column, for example, ``%d/%m/%Y %H:%M:%S``.
-
-**Examples**
+  :return: Values of the date column with datetime datatype.
+  :rtype: :class:`numpy.ndarray`
 
 Example 1: Parsing dates with default settings
 
@@ -40,6 +37,9 @@ Example 2: Parsing dates with a specified format
 
    # Parsing dates with a specified format
    df['date_column'] = read_data.parse_dates(df, 'date_column', format='%d/%m/%Y %H:%M:%S')
+
+
+
 
 
 Process JSON Data in DataFrame
