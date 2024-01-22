@@ -9,7 +9,6 @@ The :func:`parse_dates` function is designed to parse date columns in a Pandas D
 .. autofunction:: df_csv_excel.read_data.parse_dates
 
 Parameters
-----------
 
 - **df** (:class:`pandas.DataFrame`)
   The dataframe that includes the date column.
@@ -21,7 +20,6 @@ Parameters
   The format of the date column, for example, ``%d/%m/%Y %H:%M:%S``.
 
 Examples
---------
 
 Example 1: Parsing dates with default settings
 
