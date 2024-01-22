@@ -61,7 +61,7 @@ The :func: ``get_feature_from_json`` extracts the value of a nested key in a JSO
 
 **Examples**
 
-Example 1: Extracting features from a JSON column
+Example 1: Extracting features from a JSON column   
 
 .. code-block:: python
 
