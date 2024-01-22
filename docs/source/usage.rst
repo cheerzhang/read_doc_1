@@ -18,12 +18,13 @@ Load dataframe from file
 To read dataframe from csv or excel file,
 you can use the ``df_csv_excel.read_data.read_data_by_path()`` function:
 
-.. autofunction:: df_csv_excel.read_data.read_data_by_path
+.. function:: df_csv_excel.read_data.read_data_by_path(file_path)
 
 The ``file_path`` parameter should be either ``".csv"``
 or ``"xlsx"``. Otherwise, :py:func:`df_csv_excel.read_data.read_data_by_path`
-will raise an exception.
+will raise an exception.   
 
+   :param file_path: The file name to be load.   
 
 For example:
 
