@@ -4,19 +4,19 @@ Process Dataframe Column
 Process Date Column
 --------------------
 
-The :func:``parse_dates`` function is designed to parse date columns in a Pandas DataFrame. It provides flexibility by allowing users to specify a date format or automatically extracting the format from an error message. You can use the :func:``df_csv_excel.read_data.parse_dates`` function.
+The :func: ``parse_dates`` function is designed to parse date columns in a Pandas DataFrame. It provides flexibility by allowing users to specify a date format or automatically extracting the format from an error message. You can use the :func: ``df_csv_excel.read_data.parse_dates`` function.
 
 .. autofunction:: df_csv_excel.read_data.parse_dates
 
 **Parameters**
 
-- **df** (:class:`pandas.DataFrame`)
+- **df** (:class: `pandas.DataFrame`)
   The dataframe that includes the date column.
 
-- **date_column_name** (:class:`str`)
+- **date_column_name** (:class: `str`)
   The name of the date column.
 
-- **format** (:class:`str`, optional)
+- **format** (:class: `str`, optional)
   The format of the date column, for example, ``%d/%m/%Y %H:%M:%S``.
 
 **Examples**
