@@ -10,9 +10,9 @@ you can use ``df_csv_excel.read_data.parse_dates(df, date_column_name, format=No
 
 .. autofunction:: df_csv_excel.read_data.parse_dates
 
-The ``df`` parameter is the dataframe that including date column.
-The ``date_column_name`` parameter is the date column.
-The ``format`` parameter is the format of the date column, for example ``%d/%m/%Y %H:%M:%S``.
+The ``df`` parameter is the dataframe that including date column.   
+The ``date_column_name`` parameter is the date column.   
+The ``format`` parameter is the format of the date column, for example ``%d/%m/%Y %H:%M:%S``.   
 
 
 Example 1: Parsing dates with default settings
