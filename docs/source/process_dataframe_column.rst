@@ -73,7 +73,8 @@ Example: Extracting features from a JSON column
    df = pd.DataFrame(data)
 
    # Extract features
-   result = get_feature_from_json(df, 'json_column', ['a', 'b', 'c'])
+   df['c_value'] = get_feature_from_json(df, 'json_column', ['a', 'b', 'c'])
+   
   
 
 .. note::
