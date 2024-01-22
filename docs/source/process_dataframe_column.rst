@@ -44,21 +44,23 @@ Example 2: Parsing dates with a specified format
 
 Process JSON Data in DataFrame
 --------------------
-## Function: get_feature_from_json
+.. function:: get_feature_from_json(df, json_column_name, key_names)
 
 The :func: ``get_feature_from_json`` extracts the value of a nested key in a JSON string column of a Pandas DataFrame.
 
 **Parameters**
+:param df: The DataFrame containing the JSON column.
+:type df: :class:`pandas.DataFrame`
 
-- **df** (:class:`pandas.DataFrame`): The DataFrame containing the JSON column.
-- **json_column_name** (:class:`str`): The name of the column containing JSON strings.
-- **key_names** (:class:`list`): A list of keys to navigate through the JSON structure.
+:param json_column_name: The name of the column containing JSON strings.
+:type json_column_name: :class:`str`
 
-**Returns**
+:param key_names: A list of keys to navigate through the JSON structure.
+:type key_names: :class:`list`
 
-- If successful, the function adds a new column ('json_feature') to the DataFrame, containing the extracted values.
-- If an error occurs during processing (JSONDecodeError, TypeError, KeyError), it returns `None`.
-
+:return: If successful, the function adds a new column ('json_feature') to the DataFrame, containing the extracted values.
+If an error occurs during processing (JSONDecodeError, TypeError, KeyError), it returns `None`.
+:rtype: :class:`numpy.ndarray`
 **Examples**
 
 Example 1: Extracting features from a JSON column   
@@ -79,7 +81,7 @@ Example 1: Extracting features from a JSON column
    # 0  {"a": {"b": {"c": 42}}}           42
    # 1  {"a": {"b": {"c": 24}}}           24
 
-**Notes**
+.. note::
 
 - The functions use the :mod:`json` module to handle JSON parsing.
 - If an error occurs during processing, the corresponding value in the result column is set to `None`.
