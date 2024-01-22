@@ -84,7 +84,7 @@ Example: Extracting features from a JSON column
 
 
 Get Latest Row by Column
-========================
+--------------------
 
 .. function:: get_latest_row_by_column(df, date_column, duplicate_column)
   
