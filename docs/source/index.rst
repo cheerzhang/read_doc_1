@@ -1,13 +1,10 @@
-Welcome to Lumache's documentation!
+Welcome to read-csv-excel's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**read-csv-excel** is a Python library that provides a collection of common and customized functions for handling data, particularly CSV and Excel data. It simplifies the process of converting data into Pandas DataFrames, performing statistical analysis, and creating visualizations.
 
 Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+how to :ref:`installation` the project and example for the usage of the functions.
 
 .. note::
 
@@ -19,4 +16,5 @@ Contents
 .. toctree::
 
    usage
+   process_dataframe_column
    api
