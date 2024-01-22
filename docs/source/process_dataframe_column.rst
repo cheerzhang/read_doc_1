@@ -49,18 +49,17 @@ Process JSON Data in DataFrame
   The :func: ``get_feature_from_json`` extracts the value of a nested key in a JSON string column of a Pandas DataFrame.   
 
   :param df: The DataFrame containing the JSON column.
-  :type df: :class:`pandas.DataFrame`
+   :type df: :class:`pandas.DataFrame`
 
-  :param json_column_name: The name of the column containing JSON strings.
-  :type json_column_name: :class:`str`
+   :param json_column_name: The name of the column containing JSON strings.
+   :type json_column_name: :class:`str`
 
-  :param key_names: A list of keys to navigate through the JSON structure.
-  :type key_names: :class:`list`
+   :param key_names: A list of keys to navigate through the JSON structure.
+   :type key_names: :class:`list`
 
-  return: If successful, the function adds a new column ('json_feature') to the DataFrame, containing the extracted values.
+   :return: If successful, the function adds a new column ('json_feature') to the DataFrame, containing the extracted values.
             If an error occurs during processing (JSONDecodeError, TypeError, KeyError), it returns `None`.
-   :rtype: :class:`numpy.ndarray`   
-
+   :rtype: :class:`numpy.ndarray`
 
 **Examples**
 
