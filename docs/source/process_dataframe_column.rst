@@ -122,3 +122,38 @@ Example
    The input DataFrame is modified in-place during the process.
 
 
+Get Email Domain and Prefix from Email Column
+--------------------
+
+.. function:: get_email_host(df, email_column='email')
+
+   Extract email prefixes and domains from a DataFrame column.
+
+   :param df: The pandas DataFrame containing the email column.
+   :type df: :class:`pandas.DataFrame`
+
+   :param email_column: The name of the email column in the DataFrame.
+   :type email_column: :class:`str`, optional, default: 'email'
+
+   :return: Tuple of NumPy arrays containing email prefixes and domains.
+
+Example
+
+.. code-block:: python
+
+      from df_csv_excel.read_data import get_email_host
+
+      # Assuming 'df' is your DataFrame
+      prefixes, domains = get_email_host(df, email_column='user_email')
+
+This function extracts the email prefixes and domains from a specified column in a pandas DataFrame. It handles empty email cases by setting the 'email_domain' and 'email_prefix' to empty strings in such cases.
+
+
+
+.. note::
+
+      This function handles empty email cases by setting the 'email_domain' and 'email_prefix' to empty strings when the email is empty.
+
+   
+
+
