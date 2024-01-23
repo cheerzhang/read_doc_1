@@ -1,12 +1,12 @@
-Template for the Read the Docs tutorial
+Documents for pypi library df_csv_excel
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+Please refer to the github for df_csv_excel source code:
+https://github.com/cheerzhang/read_csv_excel
 
-Read the tutorial here:
 
-https://docs.readthedocs.io/en/stable/tutorial/
+Pypi page of df_csv_excel
+https://pypi.org/project/df-csv-excel/
 
 
 

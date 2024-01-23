@@ -17,4 +17,5 @@ Contents
 
    usage
    process_dataframe_column
+   feature_engineer
    api
