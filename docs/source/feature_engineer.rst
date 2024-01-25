@@ -96,8 +96,8 @@ Calculate Information Value (IV)
    :param num_bins: Number of bins to discretize the continuous feature.
    :type num_bins: int, optional, default: 10
 
-   :return: Information Value (IV) for the feature.
-   :rtype: float
+   :return: Information Value (IV) for the feature, pivot table, and a bar chart.
+   :rtype: Tuple[float, pandas.DataFrame, matplotlib.pyplot]
 
    :raises ValueError: If the DataFrame is empty or if one or more specified columns are not found.
 
@@ -119,15 +119,16 @@ Calculate Information Value (IV)
    and \(\epsilon\) is a small constant added to avoid division by zero.
 
    The IV indicates the predictive power of the feature:
-   - IV < 0.02: Weak predictor
-   - 0.02 <= IV < 0.1: Medium predictor
-   - IV >= 0.1: Strong predictor
+
+      - IV < 0.02: Weak predictor   
+      - 0.02 <= IV < 0.1: Medium predictor   
+      - IV >= 0.1: Strong predictor   
 
    Example:
 
    .. code-block:: python
 
-      from your_module_name import calculate_iv
+      from df_csv_excel.fe_functions import calculate_iv
 
       iv_score = calculate_iv(df, feature='your_feature_column', target='your_target_column', num_bins=10)
 
@@ -139,4 +140,11 @@ Calculate Information Value (IV)
 
       Ensure that the specified feature and target columns exist in the DataFrame to avoid errors.
 
+   The function also returns a pivot table containing counts and percentages for each bin and target label, as well as a bar chart
+   visualizing the counts for each bin and label.
+
+   .. figure:: _static/calculate_iv_example.png
+      :align: center
+
+      Example Bar Chart of Counts for Each Bin and Label.
 
