@@ -38,4 +38,40 @@ Example
       result = significant_association_chi_square(df, column_category='category', column_target='target')
 
 
+
+Calculate Jaccard similarity
+------------------------
+
+.. function:: get_similarity(df, column_str_1, column_str_2)
+
+   This function is to calculate Jaccard similarity scores between two specified columns in a DataFrame.
    
+   :param df: The input DataFrame.
+   :type df: pandas.DataFrame
+
+   :param column_str_1: The name of the first column.
+   :type column_str_1: str
+
+   :param column_str_2: The name of the second column.
+   :type column_str_2: str
+
+   :return: An array of Jaccard similarity scores.
+   :rtype: numpy.ndarray
+
+   :raises ValueError: If the DataFrame is empty or if one or more specified columns are not found.
+
+
+Example:
+
+.. code-block:: python
+
+   from your_module import get_similarity
+
+   score = get_similarity(df, column_str_1='column1', column_str_2='column2')
+
+
+.. note::
+
+   The Jaccard similarity is calculated by comparing the unique values in the specified columns. It is a
+   measure of the similarity between the sets of values in the two columns.
+   A score of 0 indicates no similarity, and a score of 1 indicates complete similarity.
