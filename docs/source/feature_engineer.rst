@@ -65,7 +65,7 @@ Example:
 
 .. code-block:: python
 
-   from your_module import get_similarity
+   from df_csv_excel.fe_functions import get_similarity
 
    score = get_similarity(df, column_str_1='column1', column_str_2='column2')
 
