@@ -80,7 +80,7 @@ Calculate Jaccard similarity
 Calculate Information Value (IV)
 --------------------------------
 
-.. function:: calculate_iv(data, feature, target, num_bins=10)
+.. function:: calculate_iv(data, feature, target, custom_bins=None)
 
    This function calculates the Information Value (IV) for a given feature in a binary classification task.
 
@@ -93,8 +93,8 @@ Calculate Information Value (IV)
    :param target: Name of the target column.
    :type target: str
 
-   :param num_bins: Number of bins to discretize the continuous feature.
-   :type num_bins: int, optional, default: 10
+   :param custom_bins: Custom bin edges for discretizing the feature. If None, automatic binning is used.
+   :type custom_bins: list or array, optional
 
    :return: Information Value (IV) for the feature, pivot table, and a bar chart.
    :rtype: Tuple[float, pandas.DataFrame, matplotlib.pyplot]
