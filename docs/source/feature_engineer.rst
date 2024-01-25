@@ -61,20 +61,20 @@ Calculate Jaccard similarity
    :raises ValueError: If the DataFrame is empty or if one or more specified columns are not found.
 
 
-Example:
+   Example:
 
-.. code-block:: python
+   .. code-block:: python
 
-   from df_csv_excel.fe_functions import get_similarity
+      from df_csv_excel.fe_functions import get_similarity
 
-   score = get_similarity(df, column_str_1='column1', column_str_2='column2')
+      score = get_similarity(df, column_str_1='column1', column_str_2='column2')
 
 
-.. note::
+   .. note::
 
-   The Jaccard similarity is calculated by comparing the unique values in the specified columns. It is a
-   measure of the similarity between the sets of values in the two columns.
-   A score of 0 indicates no similarity, and a score of 1 indicates complete similarity.
+      The Jaccard similarity is calculated by comparing the unique values in the specified columns. It is a
+      measure of the similarity between the sets of values in the two columns.
+      A score of 0 indicates no similarity, and a score of 1 indicates complete similarity.
 
 
 Calculate Information Value (IV)
