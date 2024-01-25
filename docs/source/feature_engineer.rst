@@ -143,7 +143,7 @@ Calculate Information Value (IV)
    The function also returns a pivot table containing counts and percentages for each bin and target label, as well as a bar chart
    visualizing the counts for each bin and label.
 
-   .. figure:: _static/calculate_iv_example.png
+   .. image:: _static/calculate_iv_example.png
       :align: center
 
       Example Bar Chart of Counts for Each Bin and Label.
