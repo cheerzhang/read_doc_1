@@ -130,7 +130,7 @@ Calculate Information Value (IV)
 
       from df_csv_excel.fe_functions import calculate_iv
 
-      iv_score = calculate_iv(df, feature='your_feature_column', target='your_target_column', num_bins=10)
+      total_iv, pivot_table, plt = calculate_iv(data, 'age', 'label', custom_bins=[0, 20, 40, 60, 80, 100])
 
    .. note::
 
