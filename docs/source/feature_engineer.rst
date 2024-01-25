@@ -144,7 +144,8 @@ Calculate Information Value (IV)
    visualizing the counts for each bin and label.
 
    .. image:: _static/calculate_iv_example.png
-      :align: center
+      :width: 600
+      :alt: calculate_iv_example.png text
 
       Example Bar Chart of Counts for Each Bin and Label.
 
