@@ -18,4 +18,5 @@ Contents
    usage
    process_dataframe_column
    feature_engineer
+   eval_model
    api
