@@ -25,6 +25,20 @@ Evaluate Binary Classification Performance
 
    This function computes common binary classification evaluation metrics, including accuracy, precision, recall, F1 score, confusion matrix, KS statistic, and Gini coefficient.
 
+   The returned dictionary has the following structure:
+
+   .. code-block:: python
+
+      {
+          'Confusion_Matrix': array,
+          'Accuracy': float,
+          'Precision': float,
+          'Recall': float,
+          'F1_Score': float,
+          'KS_Statistic': float,
+          'Gini_Coefficient': float
+      }
+
    Example
    -------
 
