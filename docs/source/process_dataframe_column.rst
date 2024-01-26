@@ -137,23 +137,51 @@ Get Email Domain and Prefix from Email Column
 
    :return: Tuple of NumPy arrays containing email prefixes and domains.
 
-Example
+   Example
 
-.. code-block:: python
+   .. code-block:: python
 
-      from df_csv_excel.read_data import get_email_host
+         from df_csv_excel.read_data import get_email_host
 
-      # Assuming 'df' is your DataFrame
-      prefixes, domains = get_email_host(df, email_column='user_email')
+         # Assuming 'df' is your DataFrame
+         prefixes, domains = get_email_host(df, email_column='user_email')
 
-This function extracts the email prefixes and domains from a specified column in a pandas DataFrame. It handles empty email cases by setting the 'email_domain' and 'email_prefix' to empty strings in such cases.
+   This function extracts the email prefixes and domains from a specified column in a pandas DataFrame. It handles empty email cases by setting the 'email_domain' and 'email_prefix' to empty strings in such cases.
 
 
 
-.. note::
+   .. note::
 
-      This function handles empty email cases by setting the 'email_domain' and 'email_prefix' to empty strings when the email is empty.
+         This function handles empty email cases by setting the 'email_domain' and 'email_prefix' to empty strings when the email is empty.
 
-   
+      
+Calculate Age
+-------------
+
+.. function:: calculate_age(df, birthdate_column)
+
+   Calculate ages based on birthdates in a DataFrame.
+
+   :param df: The pandas DataFrame containing the birthdate column.
+   :type df: :class:`pandas.DataFrame`
+
+   :param birthdate_column: The name of the birthdate column in the DataFrame.
+   :type birthdate_column: :class:`str`
+
+   :return: NumPy array containing age values.
+
+   Example
+
+   .. code-block:: python
+
+         from df_csv_excel.read_data import calculate_age
+
+         ages = calculate_age(df, birthdate_column='birthdate')
+
+   This function calculates ages based on birthdates from a specified column in a pandas DataFrame. It handles cases where birthdates are in the future, adjusting the age accordingly.
+
+   .. note::
+
+         Ensure that the 'datetime' module is imported before using this function.
 
 
