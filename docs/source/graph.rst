@@ -41,7 +41,10 @@ Plot a pie chart based on specified label_column values.
        A Series containing counts of occurrences for each unique value in label_column.
 
    Example:
-   >>> from df_csv_excel.plot_data import plot_pie_chart
-   >>> 
-   >>> fig, options = plot_pie_chart(df, 'label')
+   
+    .. code-block:: python
+        
+        from df_csv_excel.plot_data import plot_pie_chart
+        
+        fig, options = plot_pie_chart(df, 'label')
 
