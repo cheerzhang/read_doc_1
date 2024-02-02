@@ -19,4 +19,5 @@ Contents
    process_dataframe_column
    feature_engineer
    eval_model
+   graph
    api
